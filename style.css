@@ -1,0 +1,369 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css')
+    
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.tampil {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+.tampil-body {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.tampil-body div {
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	background-color: white;
+}
+.tampil-body button {
+	cursor: pointer;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #DC143C;
+	border: 0;
+	margin-top: 20px;
+
+	color: white;
+	padding: 10px;
+}
+
+
+.about {
+	text-align: center;
+	margin-top: 20px;
+	
+	padding: 50px;
+}  
+
+.tulisan-besar {
+  font-size: 40px;
+}
+
+.tulisan-besar-1 {
+  font-size: 25px;
+}
+
+.tulisan-besar-2 {
+  font-size: 24px;
+}
+
+    .dark-mode {
+      background-color: #1a1a1a;
+    }
+    
+      .mode-gelap {
+     display: block;
+     margin-left: 8rem;
+     background-color: rgba(48, 48, 48, 0.5);
+     padding: 5px 25px 5px 8px;
+     border-radius: 8px 0 0 8px;
+     font-size: 20px;
+     position: fixed;
+     z-index: 99;
+     right: 0;
+    }
+    
+    
+    .mode-terang {
+     display: none;
+     margin-left: 8rem;
+     background-color: rgba(48, 48, 48, 0.5);
+     padding: 5px 25px 5px 8px;
+     border-radius: 8px 0 0 8px;
+     font-size: 20px;
+     position: fixed;
+     z-index: 99;
+     right: 0;
+      
+    }
+
+.teks-berubah-warna {
+  animation: berubah-warna 50s infinite;
+}
+
+@keyframes berubah-warna {
+  0% {
+    color: #FF0000;
+  }
+  20% {
+    color: #00FF00;
+  }
+  40% {
+    color: #0000FF;
+  }
+  60% {
+    color: #FFFF00;
+  }
+  80% {
+    color: #00FFFF;
+  }
+  100% {
+    color: #FF00FF;
+  }
+}
+
+.teks-berubah {
+  animation: berubah 5s infinite;
+}
+
+@keyframes berubah {
+  50% {
+    color: #000000;
+  }
+  100% {
+    color: #FFFFFF;
+  }
+}
+
+.background-transparan {
+  background-color: rgba(255, 255, 255, 0.5); /* Atur opacity background */
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Atur z-index untuk membuat background transparan */
+}
+
+.tombol-transparan {
+  background-color: rgba(25, 255, 255, 0.5);;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tombol-transparan:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+    video-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+      position: relative;
+      left: 0;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      width: 100%;
+      opacity: 0.8;
+    }
+    
+    header {
+      text-align: center;
+      margin-top: -0rem;
+    }
+    
+    header .container {
+      margin: 5px;
+    }
+    header img {
+      width: 130px;
+      box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+      border-radius: 60px;
+    }
+   
+    header .container .title {
+      color: white;
+      font-size: 30px;
+      font-family: "Roboto", serif;
+      opacity: .9;
+    }
+    
+    header .container .title i {
+      color: #4f92ff;
+      font-size: 20px;
+    }
+    
+    header .container .desc {
+      color: white;
+      font-family: "Rubik", serif;
+      font-weight: 400;
+      opacity: .8;
+    }
+    
+    header .myinfo div {
+      color: white;
+      font-size: 12px;
+      border: solid 1px orange;
+      padding: 0px 8px;
+      line-height: 30px;
+      border-radius: 15px;
+    }
+    
+    header .myinfo {
+      margin: 1rem auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem auto;
+      gap: 15px
+    }
+    
+    section a {
+      width: 18rem;
+      height: 2.5rem;
+    }
+    
+    section a button {
+      background-color: rgba(110, 110, 110, 0.2);
+      border: solid 1.5px rgba(255, 255, 255, 0.3);
+      color: white;
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      transition: all 0.6s;
+    }
+    
+    section a button:active {
+      transform: scale(1.1);
+      border: solid 3px white;
+      font-style: bold;
+      filter: drop-shadow(-3px 2px 8px #ffffff);
+     
+    }
+    
+    footer {
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+      opacity: .8;
+    }
+    
+        .hamburger {
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .hamburger-line {
+      display: block;
+      width: 24px;
+      height: 2px;
+      margin: 5px auto;
+      background-color: white;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active .hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .mobile-menu {
+      transform: translateX(-100%);
+      background-color: #1E88E5;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-menu.active {
+      transform: translateX(0);
+      background-color: #1E88E5;
+    }
+    
+    .navbar {
+      color: #4f92ff;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0.3px 3px 0px #0000FF;
+    }
+
+    .hamburger {
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .hamburger-line {
+      display: block;
+      width: 24px;
+      height: 2px;
+      margin: 5px auto;
+      background-color: #1E88E5;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active .hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .title {
+      margin: 6rem 1.5rem 3rem 1.5rem;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: -0.1px 1.2px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    
+    .title h1 {
+      color: #1E88E5;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    .title p {
+      color: #2e2e2e;
+      font-weight: bold;
+      line-height: 18px;
+    }
+    
+    .title .websit {
+      font-size: 15px;
+      margin-top: 13px;
+    }
+    
+    .title .websit p {
+      color: #0b5fde;
+    }
